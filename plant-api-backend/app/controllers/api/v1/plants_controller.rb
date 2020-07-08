@@ -1,7 +1,7 @@
 class Api::V1::PlantsController < ApplicationController
     def index
         @plants = Plant.all
-        render json: @plants, status 200
+        render json: @plants, status: 200
     end 
     def show 
         @plant = Plant.find(params[:id])

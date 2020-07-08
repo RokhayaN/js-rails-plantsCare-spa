@@ -1,4 +1,9 @@
 class Api::V1::CaresController < ApplicationController
+    def index 
+        @care = Care.all
+        render json: @cares, status: 200
+    end 
+    
     def create 
         @care = Care.create(check_params)
         if @care.valid?
