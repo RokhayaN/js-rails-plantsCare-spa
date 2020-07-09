@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do 
       resources :plants, only: [:index, :show, :update] do
-      resources :cares, only: [:index, :create]
+      resources :cares
       end 
+      resources :cares, only: [:index, :create]
      end
-   end 
+    end 
   end
