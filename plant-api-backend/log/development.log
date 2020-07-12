@@ -3086,3 +3086,226 @@ No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", ima
 Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 2979)
 
 
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 01:15:07 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (3.99ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 3001)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 01:15:08 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (13.11ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.4ms | Allocations: 2997)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 01:15:09 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (30.29ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.3ms | Allocations: 2982)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 01:15:10 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (3.16ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 18:38:04 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.8ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (2.23ms)
+Completed 200 OK in 39ms (Views: 33.5ms | ActiveRecord: 1.4ms | Allocations: 9346)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 18:54:20 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (1.6ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (3.78ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 1.6ms | Allocations: 3011)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:11:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (1.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (2.92ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 1.2ms | Allocations: 3011)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:11:45 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (13.59ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms | Allocations: 2997)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:34:38 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (2.0ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (4.11ms)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 2.0ms | Allocations: 2999)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:34:39 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (23.29ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.4ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:34:59 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (8.05ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.3ms | Allocations: 2997)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:35:00 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.5ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (20.88ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.5ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:36:01 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (1.9ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (10.86ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 1.9ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:36:04 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (11.37ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.4ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:39:44 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (12.39ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.4ms | Allocations: 2979)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 19:39:46 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.5ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (12.07ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.5ms | Allocations: 2979)
+
+
+Started GET "/plants" for ::1 at 2020-07-09 20:36:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/plants"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-07-09 20:36:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 20:40:59 -0500
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (1.8ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (4.63ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 1.8ms | Allocations: 2998)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-09 20:43:20 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+No serializer found for resource: #<Plant id: 1, name: "peperomia raindrop", image: "https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/1035...", description: "Peperomia are slow growing tropical annuals and pe...", created_at: "2020-07-08 16:15:00", updated_at: "2020-07-08 16:15:00">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Plant::ActiveRecord_Relation (4.84ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 2979)
+
+

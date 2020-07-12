@@ -5,7 +5,7 @@ class PlantsAdapter{
      getPlants(){
         return fetch(this.baseURL)
         .then(res => res.json())
-        .then(json => json.data)
+  //.then(json => json.data)
     }
 }
 
