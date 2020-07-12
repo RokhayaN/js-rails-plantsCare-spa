@@ -1,4 +1,4 @@
 class CareSerializer < ActiveModel::Serializer
     attributes  :maintenance, :light, :fertilization, :plant_id
-    has_one :plant 
+    belongs_to :plant 
   end
