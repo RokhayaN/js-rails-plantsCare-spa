@@ -4,17 +4,20 @@
     transition: 0.3s;
     width: 32%;
     margin-top: 20px;
+    
     font-family: "Times New Roman", Times, serif;
-   
   }
   
   .card-info {
     padding: 3px 20px;
   }
+
+  .hidden{
+    display: none;
+  }
   
   .card-info h1 {
     text-align: center;
-    text-shadow: 1px 1px #1dc95f;
     padding-bottom: 5px;
     border-bottom: 1px solid grey;
   }
@@ -42,7 +45,7 @@
   #second-title{
     text-align: center;
     color: hsl(192, 100%, 1%);
-    
+    font-family: "Domaine-Regular",helvetica,roboto,arial,sans-serif;
     
   }
   

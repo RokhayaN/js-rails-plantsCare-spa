@@ -8,7 +8,7 @@ class PlantsAdapter{
     }
 
 
-    postPlantToApi(configurationObject) {
+     postPlantToApi(configurationObject) {
         return fetch(this.baseURL, configurationObject)
           .then(res => res.json())
           .catch(error => console.log("Error: " + error))

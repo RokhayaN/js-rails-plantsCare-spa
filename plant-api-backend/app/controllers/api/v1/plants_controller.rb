@@ -11,6 +11,7 @@ class Api::V1::PlantsController < ApplicationController
     end
 
     def create 
+        #binding.pry
     plant = Plant.new(checks_params)
         cares = params[:cares].map { |care| Care.find_or_create_by(maintenance: care, light: care, fertilization:care ) }
         plant.cares << cares
@@ -29,6 +30,6 @@ class Api::V1::PlantsController < ApplicationController
     end 
     private 
     def checks_params
-        params.require(:name).permit(:image, :description)
+        params.require(:plant).permit(:name, :image, :description)
     end 
 end

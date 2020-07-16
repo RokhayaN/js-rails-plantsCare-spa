@@ -1,29 +1,3 @@
-/*class Plants{
-    constructor(){
-        this.plants = []
-        this.adapter = new PlantsAdapter()
-        this.formSubmit = document.getElementById("form-submit");
-        this.formButtons = document.getElementById("form-show-buttons")
-        //this.bindEventListeners()
-        this.fetchAndLoadPlants()
-
-    }
-
-    fetchAndLoadPlants(){
-       this.adapter.getPlants()
-       .then(plants =>{
-        return console.log(plants)
-       })
-       .then(() => {
-        this.render()
-       })
-    }
-
-    render(){
-      console.log('period pooh...')
-    }
-}*/
-
 class Plants{
     constructor() {
       this.plants = [];
@@ -108,10 +82,11 @@ class Plants{
 
 
     hideOrShowElement(element) {
+      console.log(element)
       if (element.classList.contains("hidden")) {
         element.classList.remove("hidden");
       } else {
-        element.className += " hidden";
+        element.className += "hidden";
       }
     }
 
@@ -129,14 +104,6 @@ class Plants{
     clearPlants() {
       this.cardContainer.innerHTML = "";
     }
-
-
-    //getAndLoadRandomPlantByCare() {
-      //this.clearPlants();
-     // const care = event.target.value
-     // this.adapter.getPlantByCare(care).then(json => this.loadRandomPlant(json.data.attributes))
-    //}
-
 
     loadRandomPlant(plant) {
       let cares = this.createArrayOfPlantCares(plant.cares)
