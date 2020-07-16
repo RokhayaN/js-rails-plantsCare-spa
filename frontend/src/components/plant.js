@@ -30,8 +30,8 @@ class Plant {
       const footer = document.createElement('div')
       footer.className = "card-footer"
       const link = document.createElement('a')
-      link.href = this.image
-      link.innerHTML = "View Plant Here"
+      //link.href = this.image
+      //link.innerHTML = "View Plant Here"
       footer.appendChild(link)
       card.appendChild(cardInfo)
       card.appendChild(footer)

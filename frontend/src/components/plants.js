@@ -38,7 +38,7 @@ class Plants{
 
 
     fetchAndLoadPlants() {
-      this.adapter.getPlants().then(plants => this.createPlants(plants)).then(() => this.addPlantsToDom())
+      this.adapter.getPlants().then(plants => this.createPlants(plants)) 
     }
 
 
@@ -64,18 +64,22 @@ class Plants{
 
 
     createPlants(plants) {
-      for (let plant of plants) {
-        let cares = this.createArrayOfPlantCares(plant.attributes.cares)
-        this.plants.push(new Plant(plant.attributes.name, plant.attributes.image, plant.attributes.description, cares))
-      }
+      console.log("hello",plants)
+      //for (let plant of plants) {
+        plants.map(plant => {
+          let cares = this.createArrayOfPlantCares(plant.cares)
+          let newPlant = new Plant(plant.name, plant.image, plant.description, cares)
+          this.plants.push(newPlant)
+          newPlant.createPlantCard()
+        })
     }
 
 
-    addPlantsToDom() {
-      for (let plant of this.plants) {
-        Plant.createPlantCard()
-      }
-    }
+    //addPlantsToDom() {
+     // for (let plant of this.plants) {
+       // Plant.createPlantCard()
+     // }
+    //}
 
 
     addPlant() {

@@ -8053,3 +8053,1068 @@ Processing by Api::V1::PlantsController#index as HTML
 Completed 200 OK in 141ms (Views: 126.7ms | ActiveRecord: 9.7ms | Allocations: 24726)
 
 
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:38:52 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"", "image"=>"", "description"=>""}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 137)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:48:09 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (102.83ms)
+Completed 200 OK in 130ms (Views: 128.2ms | ActiveRecord: 1.6ms | Allocations: 21624)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:48:10 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"", "image"=>"", "description"=>""}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 116)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:48:20 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.11ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 1.6ms | Allocations: 10769)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:49:21 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"Amana plant", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"beautiful", "cares"=>["water ", "partial light"], "plant"=>{"name"=>"Amana plant", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"beautiful"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1017)
+
+
+  
+NoMethodError (undefined method `permit' for "Amana plant":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:50:26 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (60.93ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 2.0ms | Allocations: 10769)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:50:49 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"f", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"b", "cares"=>["h"], "plant"=>{"name"=>"f", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"b"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "f":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:51:23 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.0ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (21.82ms)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 2.2ms | Allocations: 10769)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:51:45 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:51:48 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:51:49 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:52:25 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:52:26 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:52:26 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f", "cares"=>["g", "h", "j", ""], "plant"=>{"name"=>"d", "image"=>"https://www.thesill.com/products/philodendron-green", "description"=>"f"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:52:31 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (23.75ms)
+Completed 200 OK in 27ms (Views: 25.1ms | ActiveRecord: 1.5ms | Allocations: 10771)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 14:52:59 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"d", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"d", "cares"=>["d"], "plant"=>{"name"=>"d", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_philodendron-green_variant_small_hyde_black_e6878c16-8773-4af0-8bf3-d971109156e6_720x.jpg?v=1593029304", "description"=>"d"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "d":String):
+  
+app/controllers/api/v1/plants_controller.rb:31:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:13:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 14:54:57 -0500
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (27.91ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 1.7ms | Allocations: 10767)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:20:45 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.8ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (120.94ms)
+Completed 200 OK in 146ms (Views: 141.3ms | ActiveRecord: 2.1ms | Allocations: 21112)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:26:24 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.8ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.9ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (95.49ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 3.3ms | Allocations: 10811)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:27:26 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.17ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 1.5ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:30:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:30:31 -0500
+  [1m[36mPlant Load (1.6ms)[0m  [1m[34mSELECT "plants".* FROM "plants" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.7ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (81.51ms)
+Completed 200 OK in 350721ms (Views: 93.7ms | ActiveRecord: 6.1ms | Allocations: 38925)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:19 -0500
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:19 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:19 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.7ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (78.93ms)
+Completed 200 OK in 163ms (Views: 160.5ms | ActiveRecord: 2.2ms | Allocations: 26566)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   [1m[36mCare Load (4.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (3.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:19 -0500
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (194.59ms)
+Completed 200 OK in 243ms (Views: 235.9ms | ActiveRecord: 7.2ms | Allocations: 42009)
+
+
+Processing by Api::V1::PlantsController#index as */*
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (6.8ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (190.6ms)
+Completed 200 OK in 308ms (Views: 293.2ms | ActiveRecord: 10.1ms | Allocations: 51053)
+
+
+  [1m[36mPlant Load (0.5ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:20 -0500
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (275.66ms)
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+Completed 200 OK in 339ms (Views: 333.1ms | ActiveRecord: 5.6ms | Allocations: 54387)
+
+
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (143.04ms)
+Completed 200 OK in 203ms (Views: 200.9ms | ActiveRecord: 1.8ms | Allocations: 31429)
+
+
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.9ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (225.84ms)
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+Completed 200 OK in 316ms (Views: 312.7ms | ActiveRecord: 2.7ms | Allocations: 45398)
+
+
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (133.71ms)
+Completed 200 OK in 240ms (Views: 236.9ms | ActiveRecord: 2.3ms | Allocations: 34555)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:31 -0500
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (2.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (4.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (169.01ms)
+Completed 200 OK in 178ms (Views: 169.6ms | ActiveRecord: 7.8ms | Allocations: 10774)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:36:33 -0500
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.83ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 1.7ms | Allocations: 10768)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:40:22 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.1ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (81.21ms)
+Completed 200 OK in 85ms (Views: 81.4ms | ActiveRecord: 3.2ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:43:54 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (42.36ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 1.7ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:44:03 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (3.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.9ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (146.12ms)
+Completed 200 OK in 151ms (Views: 144.5ms | ActiveRecord: 5.7ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:48:25 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (45.37ms)
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 1.5ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:53:44 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (2.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.33ms)
+Completed 200 OK in 58ms (Views: 53.7ms | ActiveRecord: 3.8ms | Allocations: 10772)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 15:55:45 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (3.7ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (67.92ms)
+Completed 200 OK in 77ms (Views: 70.7ms | ActiveRecord: 6.0ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 16:02:01 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (44.46ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 1.3ms | Allocations: 10809)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 17:12:28 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"Birds Nest Fern", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_birds-nest-fern_hover_terracotta_720x.jpg?v=1593027581", "description"=>"Known for its wavy ripple-edge fronds that grow out of a central rosette, this plant will add vibrant pop of green to any space. We love it because it’s considered non-toxic, making it safe to keep around your furry friends", "cares"=>["Partial light", "Water once a week", "Fertilize once a month"], "plant"=>{"name"=>"Birds Nest Fern", "image"=>"https://cdn.shopify.com/s/files/1/0150/6262/products/the-sill_birds-nest-fern_hover_terracotta_720x.jpg?v=1593027581", "description"=>"Known for its wavy ripple-edge fronds that grow out of a central rosette, this plant will add vibrant pop of green to any space. We love it because it’s considered non-toxic, making it safe to keep around your furry friends"}}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1018)
+
+
+  
+NoMethodError (undefined method `permit' for "Birds Nest Fern":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 17:12:43 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.11ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 1.8ms | Allocations: 10809)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 17:15:15 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"name", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"name", "image"=>"", "description"=>""}}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "name":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 17:15:25 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.6ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.7ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (55.59ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 2.1ms | Allocations: 10772)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 17:15:45 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"h", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"h", "image"=>"", "description"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1017)
+
+
+  
+NoMethodError (undefined method `permit' for "h":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 17:17:44 -0500
+Processing by Api::V1::PlantsController#index as HTML
+  [1m[36mPlant Load (1.0ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (98.1ms)
+Completed 200 OK in 107ms (Views: 103.8ms | ActiveRecord: 2.5ms | Allocations: 10767)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-15 17:19:18 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"h", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"h", "image"=>"", "description"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "h":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 17:19:39 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (8.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (34.31ms)
+Completed 200 OK in 38ms (Views: 28.5ms | ActiveRecord: 9.5ms | Allocations: 10769)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 18:08:09 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (31.32ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 2.4ms | Allocations: 10809)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 18:08:24 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (46.08ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 2.0ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 18:09:07 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.6ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (93.9ms)
+Completed 200 OK in 100ms (Views: 97.8ms | ActiveRecord: 2.2ms | Allocations: 10773)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-15 18:12:58 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.42ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 1.9ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 01:12:54 -0500
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (3.8ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (19.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.8ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (191.19ms)
+Completed 200 OK in 312ms (Views: 239.4ms | ActiveRecord: 25.4ms | Allocations: 10810)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 09:49:07 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.9ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.8ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (551.56ms)
+Completed 200 OK in 582ms (Views: 573.7ms | ActiveRecord: 2.9ms | Allocations: 10817)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:32:38 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (1.2ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (288.34ms)
+Completed 200 OK in 322ms (Views: 314.8ms | ActiveRecord: 2.9ms | Allocations: 10810)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:32:47 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (1.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (50.01ms)
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 3.0ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:32:52 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.8ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (92.39ms)
+Completed 200 OK in 100ms (Views: 97.5ms | ActiveRecord: 2.5ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:32:53 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.1ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (113.31ms)
+Completed 200 OK in 118ms (Views: 115.7ms | ActiveRecord: 1.4ms | Allocations: 10773)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:33:38 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.4ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.3ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (40.78ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 2.0ms | Allocations: 10770)
+
+
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:33:47 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (0.3ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.5ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (52.7ms)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 2.2ms | Allocations: 10770)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-16 11:41:16 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"t", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"t", "image"=>"", "description"=>""}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1017)
+
+
+  
+NoMethodError (undefined method `permit' for "t":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'
+Started GET "/api/v1/plants" for ::1 at 2020-07-16 11:41:22 -0500
+Processing by Api::V1::PlantsController#index as */*
+  [1m[36mPlant Load (1.4ms)[0m  [1m[34mSELECT "plants".* FROM "plants"[0m
+  ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 2]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 3]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (15.6ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 4]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 5]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers]   [1m[36mCare Load (0.2ms)[0m  [1m[34mSELECT "cares".* FROM "cares" WHERE "cares"."plant_id" = ?[0m  [["plant_id", 6]]
+[active_model_serializers]   ↳ app/controllers/api/v1/plants_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (88.2ms)
+Completed 200 OK in 94ms (Views: 75.2ms | ActiveRecord: 18.4ms | Allocations: 10809)
+
+
+Started POST "/api/v1/plants" for ::1 at 2020-07-16 11:42:27 -0500
+Processing by Api::V1::PlantsController#create as JSON
+  Parameters: {"name"=>"f", "image"=>"", "description"=>"", "cares"=>[""], "plant"=>{"name"=>"f", "image"=>"", "description"=>""}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+  
+NoMethodError (undefined method `permit' for "f":String):
+  
+app/controllers/api/v1/plants_controller.rb:32:in `checks_params'
+app/controllers/api/v1/plants_controller.rb:14:in `create'

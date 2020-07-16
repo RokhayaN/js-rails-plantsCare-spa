@@ -5,6 +5,7 @@
     width: 32%;
     margin-top: 20px;
     font-family: "Times New Roman", Times, serif;
+   
   }
   
   .card-info {
@@ -19,7 +20,7 @@
   }
   
   .card-info ul {
-    list-style-type: circle;
+    list-style-type: square;
     padding: 10px;
   }
   
@@ -29,6 +30,7 @@
   
   .card img {
     width: 100%;
+   
   }
   
   #main-title {

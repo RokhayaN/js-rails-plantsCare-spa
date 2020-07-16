@@ -1,12 +1,13 @@
 class Api::V1::PlantsController < ApplicationController
     def index
+        #binding.pry
         plants = Plant.all
     render json: plants
     end 
 
     def show 
         plant = Plant.find(params[:name])
-    render json: plants
+    render json: plant
     end
 
     def create 
@@ -14,14 +15,14 @@ class Api::V1::PlantsController < ApplicationController
         cares = params[:cares].map { |care| Care.find_or_create_by(maintenance: care, light: care, fertilization:care ) }
         plant.cares << cares
         plant.save
-    render json: plants
+    render json: plant
     end 
 
     def update 
         plant = Plant.find(params[:id]);
         plant.update(check_params)
         if plant.valid?
-            render json: plants
+            render json: plant
         else 
             render json: {errors: plant.errors.full_messages}
         end 
