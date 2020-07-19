@@ -1,10 +1,24 @@
+head{
+  
+
+  background-color: teal;
+}
+
+
+
+body{
+  background-color: whitesmoke;
+  width: 100%;
+} 
+
+
 .card {
     position: relative;
-    box-shadow: 4px 4px 8px 0 #099945;
+    box-shadow: 4px 4px 8px 0 green;
     transition: 0.3s;
     width: 32%;
     margin-top: 20px;
-    
+    background-color: transparent;
     font-family: "Times New Roman", Times, serif;
   }
   

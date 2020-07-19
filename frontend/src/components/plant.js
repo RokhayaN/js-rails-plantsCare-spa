@@ -2,7 +2,7 @@ class Plant {
     constructor(name, image, description, cares) {
         this.name = name;
         this.image = image;
-        this.description = this.description;
+        this.description = description;
         this.cares = cares;
     }
   
