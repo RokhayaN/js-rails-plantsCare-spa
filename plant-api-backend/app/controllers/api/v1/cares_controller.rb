@@ -14,6 +14,6 @@ class Api::V1::CaresController < ApplicationController
     end
     private
     def check_params
-        permit(:maintenance, :light, :fertilization)
+        params.permit(:maintenance, :light, :fertilization)
     end 
 end 

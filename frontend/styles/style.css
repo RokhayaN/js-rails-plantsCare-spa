@@ -35,14 +35,20 @@ body{
     padding-bottom: 5px;
     border-bottom: 1px solid grey;
   }
+
+  .card-info h3 {
+    text-align: center;
+  }
   
   .card-info ul {
     list-style-type: square;
     padding: 10px;
+    position: center;
   }
   
   .card-info ul li {
     margin-left: 20px;
+    
   }
   
   .card img {

@@ -17,6 +17,9 @@ class Plant {
       const name = document.createElement('h1')
       name.innerHTML = this.name
       cardInfo.appendChild(name)
+      const description = document.createElement('h5')
+      description.innerHTML = this.description
+      cardInfo.appendChild(description)
       const ingHeader = document.createElement('h3')
       ingHeader.innerHTML = "Cares:"
       cardInfo.appendChild(ingHeader)
@@ -24,17 +27,9 @@ class Plant {
       for (let care of this.cares) {
         let li = document.createElement('li')
         li.innerHTML = care
-        ul.appendChild(li)
-      }
-      cardInfo.appendChild(ul)
-      const footer = document.createElement('div')
-      footer.className = "card-footer"
-      const link = document.createElement('a')
-      //link.href = this.image
-      //link.innerHTML = "View Cares Here"
-      footer.appendChild(link)
+        ul.appendChild(li)}
+      cardInfo.appendChild(ul) 
       card.appendChild(cardInfo)
-      card.appendChild(footer)
-      document.getElementById('plant-card-container').appendChild(card)
+     document.getElementById('plant-card-container').appendChild(card)
     }
   }
